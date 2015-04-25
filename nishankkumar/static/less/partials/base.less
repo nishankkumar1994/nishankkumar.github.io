@@ -1,0 +1,83 @@
+html {
+    background: #1e242b;
+    min-height: 100%;
+}
+
+body {
+    background: #1e242b;
+    min-height: 100vh;
+    position: relative;
+}
+
+ul {
+    margin: 0px;
+}
+ul, ol, li {
+    list-style-type: none;
+    padding: 0;
+}
+a {
+    outline: none;
+    cursor: pointer;
+    &:hover, &:focus {
+        text-decoration: none;
+    }
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    text-rendering: auto;
+}
+p {
+    margin: 0px;
+}
+
+header {
+    background: @headerBack;
+    border-top: 4px solid #5cba3c;
+    box-shadow: 0 8px 8px 0 rgba(15, 23, 30, 0.5);
+    height: 54px;
+    padding: 5px 20px 5px 0px;
+    position: relative;
+    z-index: 2;
+}
+footer {
+    height: 80px;
+    background: #303B41;
+    #font > .FrutigerLT55Roman(12px, 18px);
+    color: #bae3f5;
+    box-shadow: 0px -4px 17px 0px rgba(10, 10, 10, 0.75);
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1052;
+}
+
+
+//forms
+form {
+    margin: 0px;
+}
+.container {
+    margin: 0;
+    padding-left: 240px;
+    padding-right: 0;
+    width: 100%;
+    //box-shadow: inset 0 22px 16px -16px #0f171e;
+}
+
+// left nav only_icon view
+.only_icon_wrap .container {
+    padding-left: 54px;
+    width: 100%;
+}
+.no_sidebar .container {
+   width: 100%;
+   padding-left: 0px;
+}
+.left_nav_wrap {
+    padding-bottom: 80px;
+}
+.error {
+    color: #b4393e;
+}

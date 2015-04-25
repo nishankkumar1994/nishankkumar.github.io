@@ -1,0 +1,201 @@
+//fonts placeholder
+.placeholder(@color: @placeholderText) {
+  :-moz-placeholder {
+    color: @color;
+  }
+  ::-webkit-input-placeholder {
+    color: @color;
+  }
+}
+
+// FONTS
+// --------------------------------------------------
+
+#font {
+  #family {
+    
+    .frutiger-LT-Std () {
+      font-family: @frutigerLTStd;
+    }
+
+
+    .CalibriLight () {
+        font-family: @CalibriLight;
+    }
+    .CalibriLightItalic () {
+        font-family: @CalibriLightItalic;
+    }
+    .CalibriRegular () {
+        font-family: @CalibriRegular;
+    }
+    .CalibriItalic () {
+        font-family: @CalibriItalic;
+    }
+    .CalibriBold () {
+        font-family: @CalibriBold;
+    }
+    .CalibriBoldItalic () {
+        font-family: @CalibriBoldItalic;
+    }
+
+
+    .FrutigerLT45Light () {
+        font-family: @FrutigerLT45Light;
+    }
+    .FrutigerLT46LightIt () {
+        font-family: @FrutigerLT46LightIt;
+    }
+    .FrutigerLT55Roman () {
+        font-family: @FrutigerLT55Roman;
+    }
+    .FrutigerLT56Italic () {
+        font-family: @FrutigerLT56Italic;
+    }
+    .FrutigerLT65Bold () {
+        font-family: @FrutigerLT65Bold;
+    }
+    .FrutigerLT66BoldIta () {
+        font-family: @FrutigerLT66BoldIta;
+    }
+    .FrutigerLT75Black () {
+        font-family: @FrutigerLT75Black;
+    }
+    .FrutigerLT76BlackIt () {
+        font-family: @FrutigerLT76BlackIt;
+    }
+    .FrutigerLT95UltraBl () {
+        font-family: @FrutigerLT95UltraBl;
+    }
+
+
+    .FrutigerLT47LightCn () {
+        font-family: @FrutigerLT47LightCn;
+    }
+    .FrutigerLT48LightCn () {
+        font-family: @FrutigerLT48LightCn;
+    }
+    .FrutigerLT57Cn () {
+        font-family: @FrutigerLT57Cn;
+    }
+    .FrutigerLT67BoldCn () {
+        font-family: @FrutigerLT67BoldCn;
+    }
+    .FrutigerLT68BoldCnI () {
+        font-family: @FrutigerLT68BoldCnI;
+    }
+    .FrutigerLT87ExtraBk () {
+        font-family: @FrutigerLT87ExtraBk;
+    }
+    .FrutigerLT88XBkCnIt () {
+        font-family: @FrutigerLT88XBkCnIt;
+    }
+
+  }
+  .shorthand(@size: @baseFontSize,@lineHeight: @baseLineHeight) {
+    font-size: @size;
+    line-height: @lineHeight;
+  }  
+
+  .frutiger-LT-Std (@size: @baseFontSize,@lineHeight: @baseLineHeight) {
+    #font > #family > .frutiger-LT-Std;
+    #font > .shorthand(@size, @lineHeight);
+  }
+
+//  CUSTOM FONTS
+
+
+    .CalibriLight (@size: @baseFontSize,@lineHeight: @baseLineHeight) {
+        #font > #family > .CalibriLight;
+        #font > .shorthand(@size, @lineHeight);
+    }
+    
+    .CalibriLightItalic (@size: @baseFontSize,@lineHeight: @baseLineHeight) {
+        #font > #family > .CalibriLightItalic;
+        #font > .shorthand(@size, @lineHeight);
+    }
+    .CalibriRegular (@size: @baseFontSize,@lineHeight: @baseLineHeight) {
+        #font > #family > .CalibriRegular;
+        #font > .shorthand(@size, @lineHeight);
+    }
+    .CalibriItalic (@size: @baseFontSize,@lineHeight: @baseLineHeight) {
+        #font > #family > .CalibriItalic;
+        #font > .shorthand(@size, @lineHeight);
+    }
+    .CalibriBold (@size: @baseFontSize,@lineHeight: @baseLineHeight) {
+        #font > #family > .CalibriBold;
+        #font > .shorthand(@size, @lineHeight);
+    }
+    .CalibriBoldItalic (@size: @baseFontSize,@lineHeight: @baseLineHeight) {
+        #font > #family > .CalibriBoldItalic;
+        #font > .shorthand(@size, @lineHeight);
+    }
+
+
+    .FrutigerLT45Light (@size: @baseFontSize,@lineHeight: @baseLineHeight) {
+        #font > #family > .FrutigerLT45Light;
+        #font > .shorthand(@size, @lineHeight);
+    }
+    .FrutigerLT46LightIt (@size: @baseFontSize,@lineHeight: @baseLineHeight) {
+        #font > #family > .FrutigerLT46LightIt;
+        #font > .shorthand(@size, @lineHeight);
+    }
+    .FrutigerLT55Roman (@size: @baseFontSize,@lineHeight: @baseLineHeight) {
+        #font > #family > .FrutigerLT55Roman;
+        #font > .shorthand(@size, @lineHeight);
+    }
+    .FrutigerLT56Italic (@size: @baseFontSize,@lineHeight: @baseLineHeight) {
+        #font > #family > .FrutigerLT56Italic;
+        #font > .shorthand(@size, @lineHeight);
+    }
+    .FrutigerLT65Bold (@size: @baseFontSize,@lineHeight: @baseLineHeight) {
+        #font > #family > .FrutigerLT65Bold;
+        #font > .shorthand(@size, @lineHeight);
+    }
+    .FrutigerLT66BoldIta (@size: @baseFontSize,@lineHeight: @baseLineHeight) {
+        #font > #family > .FrutigerLT66BoldIta;
+        #font > .shorthand(@size, @lineHeight);
+    }
+    .FrutigerLT75Black (@size: @baseFontSize,@lineHeight: @baseLineHeight) {
+        #font > #family > .FrutigerLT75Black;
+        #font > .shorthand(@size, @lineHeight);
+    }
+    .FrutigerLT76BlackIt (@size: @baseFontSize,@lineHeight: @baseLineHeight) {
+        #font > #family > .FrutigerLT76BlackIt;
+        #font > .shorthand(@size, @lineHeight);
+    }
+    .FrutigerLT95UltraBl (@size: @baseFontSize,@lineHeight: @baseLineHeight) {
+        #font > #family > .FrutigerLT95UltraBl;
+        #font > .shorthand(@size, @lineHeight);
+    }
+
+
+    .FrutigerLT47LightCn (@size: @baseFontSize,@lineHeight: @baseLineHeight) {
+        #font > #family > .FrutigerLT47LightCn;
+        #font > .shorthand(@size, @lineHeight);
+    }
+    .FrutigerLT48LightCn (@size: @baseFontSize,@lineHeight: @baseLineHeight) {
+        #font > #family > .FrutigerLT48LightCn;
+        #font > .shorthand(@size, @lineHeight);
+    }
+    .FrutigerLT57Cn (@size: @baseFontSize,@lineHeight: @baseLineHeight) {
+        #font > #family > .FrutigerLT57Cn;
+        #font > .shorthand(@size, @lineHeight);
+    }
+    .FrutigerLT67BoldCn (@size: @baseFontSize,@lineHeight: @baseLineHeight) {
+        #font > #family > .FrutigerLT67BoldCn;
+        #font > .shorthand(@size, @lineHeight);
+    }
+    .FrutigerLT68BoldCnI (@size: @baseFontSize,@lineHeight: @baseLineHeight) {
+        #font > #family > .FrutigerLT68BoldCnI;
+        #font > .shorthand(@size, @lineHeight);
+    }
+    .FrutigerLT87ExtraBk (@size: @baseFontSize,@lineHeight: @baseLineHeight) {
+        #font > #family > .FrutigerLT87ExtraBk;
+        #font > .shorthand(@size, @lineHeight);
+    }
+    .FrutigerLT88XBkCnIt (@size: @baseFontSize,@lineHeight: @baseLineHeight) {
+        #font > #family > .FrutigerLT88XBkCnIt;
+        #font > .shorthand(@size, @lineHeight);
+    }
+
+}

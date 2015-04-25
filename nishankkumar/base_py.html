@@ -1,0 +1,65 @@
+{% load compress %}
+{% load js %}
+{% load staticfiles %}
+
+{% load common_tags %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>{% block title %}{% block sub_title %}{% endblock %}test{% endblock %}</title>
+        <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon" />
+
+        {% block styles %}
+            {% compress css %}
+                
+            {% endcompress %}
+            {# loader image does display when 'css/small_loader.css' moved to compress #}
+        {% endblock %}
+
+        {% block local_styles %}
+        {% endblock %}
+    </head>
+
+    <body class="{% block body_class %}{% endblock %}">
+        {% block body_content %}
+                {% block header %}
+
+                {% endblock %}
+                <div class="container">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+                {% block footer %}
+                    <footer style="height:0px;"></footer>
+                {% endblock %}
+        {% endblock %}
+
+        {% block scripts %}
+            {# Third party JS libs #}
+            {% compress js %}
+                {% js 'js/_sys/jquery-2.1.1.js' %}
+                {% js 'js/_sys/jquery.form-3.50.0.js' %}
+                {% js 'js/html5.js' %}
+                {% js 'js/bootstrap.js' %}
+                {% js 'js/_sys/bootstrap-switch.js' %}
+            {% endcompress %}
+    
+            {% compress js %}
+                {% js 'js/_sys/jquery-ui-timepicker-addon-1.5.0.js' %}
+                {% js 'js/_sys/jquery.timepicker-1.4.6.js' %}
+            {% endcompress %}
+
+            {% compress js %}
+                {# Custom JS libs #}
+                {% js 'js/common.js' %}
+            {% endcompress %}
+
+        {% endblock %}
+
+
+        {% block local_scripts %}
+        {% endblock %}
+    </body>
+</html>
