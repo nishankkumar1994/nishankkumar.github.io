@@ -1,0 +1,72 @@
+.treeWrap > li {
+	position: relative;
+}
+
+.treeWrap {
+	display: inline-block;
+}
+
+.treeWrap > li:last-child:before {
+	display: none;
+}
+
+.treeWrap > li:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 1px;
+    background-color: #000;
+    left: -14px;
+    top: 10px;
+}
+
+.treeWrap > li:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 1px;
+    width: 10px;
+    background-color: #000;
+    left: -14px;
+    top: 9px;
+}
+
+.treeWrap > li > ul:before {
+    content: '';
+    position: absolute;
+    display: block;
+    display: none;
+    height: 1px;
+    width: 45px;
+    background-color: #000;
+    left: -15px;
+    top: 19px;
+    transform: rotate(23deg);
+}
+
+.treeWrap > li > ul {
+    // height: 0;
+    overflow: hidden;
+    display: none;
+    transition: all 0.1s linear;
+}
+
+.treeWrap > li > input[type=checkbox] {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	opacity: 0;
+	height: 14px;
+	cursor: pointer;
+	top: 0;
+	z-index: 1;
+}
+
+.treeWrap > li > input[type=checkbox]:checked + ul {
+	display: block;
+}
+
+.treeWrap > li > input[type=checkbox]:checked + ul:before {
+	display: block;
+}
